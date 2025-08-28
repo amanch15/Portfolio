@@ -1,6 +1,6 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
 import { motion } from "framer-motion";
@@ -63,7 +63,7 @@ export function CertificationsSection() {
                                             <Award className="h-8 w-8 text-primary flex-shrink-0" />
                                             <div>
                                                 <CardTitle>{cert.title}</CardTitle>
-                                                <p className="text-muted-foreground">{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></p>
+                                                <div className="text-muted-foreground">{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></div>
                                             </div>
                                         </div>
                                     </CardHeader>

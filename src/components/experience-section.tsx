@@ -35,12 +35,12 @@ export function ExperienceSection() {
                     <div className="absolute left-1/2 -translate-x-1/2 w-1 h-full bg-border"></div>
                     {experiences.map((exp, index) => (
                         <div key={index} className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8 text-right'}`}>
+                            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
                                 <Card className="transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
                                     <CardHeader>
-                                        <div className="flex items-center gap-4">
+                                        <div className={`flex items-center gap-4 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
                                             <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
-                                            <div>
+                                            <div className={`${index % 2 === 0 ? '' : 'text-right'}`}>
                                                 <CardTitle>{exp.title}</CardTitle>
                                                 <p className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></p>
                                             </div>
@@ -48,7 +48,7 @@ export function ExperienceSection() {
                                     </CardHeader>
                                     <CardContent>
                                         <p className="text-muted-foreground text-left">{exp.description}</p>
-                                        <div className="mt-4 flex flex-wrap gap-2">
+                                        <div className={`mt-4 flex flex-wrap gap-2 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                                             {exp.skills.map((skill) => (
                                                 <Badge key={skill} variant="outline">{skill}</Badge>
                                             ))}

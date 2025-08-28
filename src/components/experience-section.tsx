@@ -64,7 +64,7 @@ export function ExperienceSection() {
                                                 <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
                                                 <div className={`${index % 2 === 0 ? '' : 'text-right'}`}>
                                                     <CardTitle>{exp.title}</CardTitle>
-                                                    <p className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></p>
+                                                    <div className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></div>
                                                 </div>
                                             </div>
                                         </CardHeader>

@@ -8,6 +8,7 @@ import { CertificationsSection } from '@/components/certifications-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 import { AiAssistantButton } from '@/components/ai-assistant-button';
+import { ExperienceSection } from '@/components/experience-section';
 
 export default function Home() {
   return (
@@ -16,10 +17,11 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutMeSection />
-        <ProjectsSection />
         <SkillsSection />
         <EducationSection />
         <CertificationsSection />
+        <ExperienceSection />
+        <ProjectsSection />
         <ContactSection />
       </main>
       <Footer />

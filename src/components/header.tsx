@@ -16,9 +16,6 @@ export function Header() {
            <Link href="#about" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             About
           </Link>
-          <Link href="#projects" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            Projects
-          </Link>
           <Link href="#skills" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Skills
           </Link>
@@ -27,6 +24,12 @@ export function Header() {
           </Link>
           <Link href="#certifications" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Certifications
+          </Link>
+          <Link href="#experience" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Experience
+          </Link>
+          <Link href="#projects" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Projects
           </Link>
           <Link href="#contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Contact

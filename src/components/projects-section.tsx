@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import {
   Card,
@@ -72,6 +74,9 @@ export function ProjectsSection() {
             <motion.div
               key={index}
               variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
               custom={index}
               className="flex"
             >

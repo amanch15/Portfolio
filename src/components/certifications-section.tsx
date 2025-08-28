@@ -1,28 +1,23 @@
 'use client';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const certifications = [
     {
-        title: "Certified Next.js Developer",
-        issuer: "Vercel",
-        date: "2023",
-        description: "Demonstrated proficiency in building high-performance web applications using the Next.js framework.",
+        title: "Programming with JavaScript",
+        issuer: "Coursera",
+        date: "2024",
+        url: "https://coursera.org/share/5650dfc131511723f0879097325fd15b",
     },
     {
-        title: "Google Cloud Certified - Associate Cloud Engineer",
-        issuer: "Google Cloud",
-        date: "2023",
-        description: "Showcased ability to deploy applications, monitor operations, and manage enterprise solutions on Google Cloud.",
-    },
-     {
-        title: "Responsive Web Design",
-        issuer: "freeCodeCamp",
-        date: "2022",
-        description: "Completed projects to demonstrate skills in HTML and CSS for building responsive and accessible web pages.",
+        title: "Version Control",
+        issuer: "Coursera",
+        date: "2024",
+        url: "https://coursera.org/share/fa5ab42eef894b3ab38920948736f896",
     }
 ];
 
@@ -51,7 +46,7 @@ export function CertificationsSection() {
                         My professional certifications and achievements.
                     </p>
                 </div>
-                <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     {certifications.map((cert, index) => (
                         <motion.div
                             key={index}
@@ -61,20 +56,19 @@ export function CertificationsSection() {
                             viewport={{ once: true, amount: 0.5 }}
                             custom={index}
                         >
-                            <Card>
-                                <CardHeader>
-                                    <div className="flex items-start gap-4">
-                                        <Award className="h-8 w-8 text-primary flex-shrink-0" />
-                                        <div>
-                                            <CardTitle>{cert.title}</CardTitle>
-                                            <CardDescription>{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></CardDescription>
+                            <Link href={cert.url} target="_blank" rel="noopener noreferrer">
+                                <Card className="h-full transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                                    <CardHeader>
+                                        <div className="flex items-start gap-4">
+                                            <Award className="h-8 w-8 text-primary flex-shrink-0" />
+                                            <div>
+                                                <CardTitle>{cert.title}</CardTitle>
+                                                <p className="text-muted-foreground">{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-muted-foreground">{cert.description}</p>
-                                </CardContent>
-                            </Card>
+                                    </CardHeader>
+                                </Card>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

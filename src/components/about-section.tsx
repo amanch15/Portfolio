@@ -7,7 +7,7 @@ export function AboutMeSection() {
             About Me
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            I am a dedicated and passionate computer science student with a strong foundation in web development and software engineering principles. I enjoy building innovative solutions and continuously learning new technologies to enhance my skills. My goal is to contribute to meaningful projects that make a positive impact.
+            A highly motivated Computer Science student with a strong foundation in software development. Passionate about building scalable applications and solving real-world problems using cutting-edge technologies. Seeking an opportunity to contribute my problem-solving skills, full-stack development expertise, and knowledge of AI to an innovative team while continuously learning and growing in a dynamic environment.
           </p>
         </div>
       </div>

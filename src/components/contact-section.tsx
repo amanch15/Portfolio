@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -27,17 +27,17 @@ export function ContactSection() {
                     You can reach me via email or connect with me on social media.
                   </p>
                   <div className="space-y-2">
-                    <a href="mailto:aman@example.com" className="flex items-center gap-2 hover:text-primary">
+                    <a href="mailto:amanch1504@gmail.com" className="flex items-center gap-2 hover:text-primary">
                       <Mail className="h-5 w-5" />
-                      <span>aman.choudhary@example.com</span>
+                      <span>amanch1504@gmail.com</span>
                     </a>
-                     <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                     <a href="https://www.linkedin.com/in/aman-choudhary-398508343" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
                       <Linkedin className="h-5 w-5" />
                       <span>Aman Choudhary</span>
                     </a>
-                     <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                     <a href="https://github.com/amanch15" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
                       <Github className="h-5 w-5" />
-                      <span>amanc</span>
+                      <span>amanch15</span>
                     </a>
                   </div>
                 </div>

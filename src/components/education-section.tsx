@@ -20,9 +20,9 @@ export function EducationSection() {
                <CardTitle className="text-2xl">Bachelor of Technology in Computer Science</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2 text-left ml-12">
-              <p className="font-semibold">ABC University of Technology</p>
-              <p className="text-muted-foreground">2021 - 2025 | Anytown, India</p>
-              <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management Systems, Operating Systems.</p>
+              <p className="font-semibold">Amity University, Kolkata</p>
+              <p className="text-muted-foreground">2022 - Present | Kolkata, India</p>
+              <p>CGPA: 6.38 (as of 6th semester)</p>
             </CardContent>
           </Card>
         </div>

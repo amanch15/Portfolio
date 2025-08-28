@@ -16,31 +16,31 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce application with features like product catalog, shopping cart, user authentication, and Stripe payment integration.',
+    title: 'Amazon Clone',
+    description: 'Designed and developed a responsive Amazon clone using HTML and CSS, accurately replicating the homepage layout, navigation bar, product sections, and footer. Focused on clean code, responsive design principles, and pixel-perfect UI/UX.',
     image: 'https://picsum.photos/600/400?random=1',
-    imageHint: 'online shopping',
+    imageHint: 'online shopping interface',
     liveUrl: '#',
     repoUrl: '#',
-    tags: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind CSS'],
+    tags: ['HTML', 'CSS'],
   },
   {
-    title: 'Task Management App',
-    description: 'A responsive task management tool that helps users organize their tasks with boards, lists, and cards, inspired by Trello.',
+    title: 'Rock Paper Scissors Game',
+    description: 'Built an interactive Rock Paper Scissors game using HTML, CSS, and JavaScript, implementing dynamic gameplay logic, user interface design, and responsive animations. Focused on enhancing DOM manipulation skills and providing a smooth user experience.',
     image: 'https://picsum.photos/600/400?random=2',
-    imageHint: 'kanban board',
+    imageHint: 'game interface',
     liveUrl: '#',
     repoUrl: '#',
-    tags: ['React', 'Firebase', 'Material UI'],
+    tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website to showcase my skills and projects, built with modern web technologies for a fast and beautiful experience.',
+    title: 'Virus Detection Tool',
+    description: 'Developed a web-based virus detection tool that scans uploaded files for threats. Implemented secure file handling and backend processing using Node.js and Express. Built a responsive frontend with HTML, CSS, and JavaScript for smooth interaction. Applied basic cybersecurity concepts and best practices to ensure safe usage.',
     image: 'https://picsum.photos/600/400?random=3',
-    imageHint: 'web design',
+    imageHint: 'cyber security',
     liveUrl: '#',
     repoUrl: '#',
-    tags: ['Next.js', 'Genkit AI', 'Shadcn UI'],
+    tags: ['Node.js', 'Express', 'HTML', 'CSS', 'JavaScript'],
   },
 ];
 

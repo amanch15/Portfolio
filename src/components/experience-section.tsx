@@ -7,18 +7,18 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        title: "Software Engineer Intern",
-        company: "Tech Solutions Inc.",
-        date: "Summer 2024",
-        description: "Developed and maintained web applications using Next.js and TypeScript. Collaborated with a team of developers to implement new features and resolve bugs, contributing to a 15% improvement in application performance.",
-        skills: ["Next.js", "TypeScript", "React", "Node.js"]
+        title: "C# Developer Intern",
+        company: "The Techie Indians",
+        date: "June 2025 - Aug 2025",
+        description: "Gained experience in C# development within a professional team environment.",
+        skills: ["C#"]
     },
     {
-        title: "Web Developer Intern",
-        company: "Creative Minds Agency",
-        date: "Summer 2023",
-        description: "Assisted in building responsive and user-friendly websites for various clients. Gained hands-on experience with modern front-end frameworks and tools, and contributed to the successful launch of three client projects.",
-        skills: ["HTML", "CSS", "JavaScript", "Firebase"]
+        title: "Front-end Developer Intern",
+        company: "Botfixed Automation",
+        date: "July 2025 - Aug 2025",
+        description: "Worked on front-end development tasks, enhancing user interfaces and experience.",
+        skills: ["HTML", "CSS", "JavaScript"]
     }
 ];
 
@@ -40,7 +40,7 @@ export function ExperienceSection() {
             <div className="container px-4 md:px-6">
                 <div className="space-y-4 text-center">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                        Work Experience
+                        Internship Experience
                     </h2>
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
                         My professional journey and accomplishments.

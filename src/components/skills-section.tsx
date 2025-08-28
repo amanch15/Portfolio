@@ -21,10 +21,13 @@ const skillData: SkillCategory[] = [
     title: 'Languages',
     icon: <Code className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'JavaScript' },
-      { name: 'TypeScript' },
       { name: 'Python' },
-      { name: 'HTML & CSS' },
+      { name: 'C++' },
+      { name: 'JavaScript' },
+      { name: 'C#' },
+      { name: 'SQL' },
+      { name: 'HTML' },
+      { name: 'CSS' },
     ],
   },
   {
@@ -32,31 +35,26 @@ const skillData: SkillCategory[] = [
     icon: <Wind className="h-8 w-8 text-primary" />,
     skills: [
       { name: 'React.js' },
-      { name: 'Next.js' },
-      { name: 'Node.js & Express' },
-      { name: 'Tailwind CSS' },
     ],
   },
   {
-    title: 'Databases & ORMs',
-    icon: <Database className="h-8 w-8 text-primary" />,
-    skills: [
-      { name: 'MongoDB' },
-      { name: 'PostgreSQL' },
-      { name: 'Firebase' },
-      { name: 'Prisma' },
-    ],
-  },
-  {
-    title: 'Tools & Platforms',
+    title: 'Tools & Technologies',
     icon: <Cog className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'Git & GitHub' },
-      { name: 'Docker' },
-      { name: 'Vercel' },
-      { name: 'Figma' },
+      { name: 'Excel' },
+      { name: 'Rest API' },
     ],
   },
+  {
+    title: 'Soft Skills',
+    icon: <Database className="h-8 w-8 text-primary" />,
+    skills: [
+        { name: 'Discipline' },
+        { name: 'Team Work' },
+        { name: 'Solving Skills' },
+        { name: 'Punctuality' },
+    ],
+  }
 ];
 
 const cardVariants = {
@@ -81,7 +79,7 @@ export function SkillsSection() {
             Technical Skills
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-            A look at the technologies I work with.
+            A look at the technologies and skills I work with.
           </p>
         </div>
         <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2">

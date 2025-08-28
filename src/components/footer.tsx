@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, Code2 } from 'lucide-react';
+import { Github, Linkedin, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Footer() {
@@ -14,18 +14,13 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/amanch15" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/aman-choudhary-398508343" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
-            </a>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="Twitter">
-              <Twitter className="h-5 w-5" />
             </a>
           </Button>
         </div>

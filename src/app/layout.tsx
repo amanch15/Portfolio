@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: 'Aman Choudhary | Portfolio',
-  description: 'Portfolio of Aman Choudhary, a 4th year B.Tech CSE student.',
+  description: 'Portfolio of Aman Choudhary, a Computer Science student.',
 };
 
 export default function RootLayout({

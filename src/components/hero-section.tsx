@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -11,13 +11,13 @@ export function HeroSection() {
            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse delay-500"></div>
 
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-mono text-primary">
-            4th Year B.Tech CSE Student
+            Computer Science Student
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
             Aman Choudhary
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            A passionate and dedicated computer science student with a strong foundation in web development, software engineering principles, and a keen interest in creating innovative solutions.
+            A highly motivated Computer Science student with a strong foundation in software development, passionate about building scalable applications and solving real-world problems.
           </p>
           <div className="flex flex-col gap-3 min-[400px]:flex-row pt-4">
             <Button asChild size="lg" className="shadow-[0_0_20px_theme(colors.primary)] hover:shadow-[0_0_30px_theme(colors.primary)] transition-shadow">
@@ -25,18 +25,13 @@ export function HeroSection() {
             </Button>
             <div className="flex items-center gap-2">
               <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="GitHub">
+                <a href="https://github.com/amanch15" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/aman-choudhary-398508343" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-               <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
                 </a>
               </Button>
             </div>

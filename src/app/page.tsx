@@ -1,7 +1,10 @@
 import { Header } from '@/components/header';
 import { HeroSection } from '@/components/hero-section';
+import { AboutMeSection } from '@/components/about-section';
 import { ProjectsSection } from '@/components/projects-section';
 import { SkillsSection } from '@/components/skills-section';
+import { EducationSection } from '@/components/education-section';
+import { CertificationsSection } from '@/components/certifications-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 import { AiAssistantButton } from '@/components/ai-assistant-button';
@@ -12,8 +15,11 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <AboutMeSection />
         <ProjectsSection />
         <SkillsSection />
+        <EducationSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
       <Footer />

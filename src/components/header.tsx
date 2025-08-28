@@ -13,11 +13,20 @@ export function Header() {
           </span>
         </Link>
         <nav className="flex flex-1 items-center space-x-4">
+           <Link href="#about" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            About
+          </Link>
           <Link href="#projects" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Projects
           </Link>
           <Link href="#skills" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Skills
+          </Link>
+          <Link href="#education" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Education
+          </Link>
+          <Link href="#certifications" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Certifications
           </Link>
           <Link href="#contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Contact

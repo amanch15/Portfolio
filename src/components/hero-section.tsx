@@ -41,7 +41,7 @@ export function HeroSection() {
            <div className="absolute inset-0 w-full h-full bg-primary/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
           <Image
             src="https://picsum.photos/400/400"
-            data-ai-hint="coding computer"
+            data-ai-hint="developer setup"
             alt="Aman Choudhary"
             width={400}
             height={400}

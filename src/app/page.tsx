@@ -7,7 +7,6 @@ import { EducationSection } from '@/components/education-section';
 import { CertificationsSection } from '@/components/certifications-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
-import { AiAssistantButton } from '@/components/ai-assistant-button';
 import { ExperienceSection } from '@/components/experience-section';
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      <AiAssistantButton />
     </div>
   );
 }

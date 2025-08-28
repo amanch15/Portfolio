@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
+import { motion } from "framer-motion";
 
 const certifications = [
     {
@@ -23,6 +24,19 @@ const certifications = [
     }
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
+
 export function CertificationsSection() {
     return (
         <section id="certifications" className="w-full py-20 md:py-32 bg-secondary">
@@ -37,20 +51,26 @@ export function CertificationsSection() {
                 </div>
                 <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {certifications.map((cert, index) => (
-                        <Card key={index}>
-                            <CardHeader>
-                                <div className="flex items-start gap-4">
-                                    <Award className="h-8 w-8 text-primary flex-shrink-0" />
-                                    <div>
-                                        <CardTitle>{cert.title}</CardTitle>
-                                        <CardDescription>{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></CardDescription>
+                        <motion.div
+                            key={index}
+                            variants={cardVariants}
+                            custom={index}
+                        >
+                            <Card>
+                                <CardHeader>
+                                    <div className="flex items-start gap-4">
+                                        <Award className="h-8 w-8 text-primary flex-shrink-0" />
+                                        <div>
+                                            <CardTitle>{cert.title}</CardTitle>
+                                            <CardDescription>{cert.issuer} - <Badge variant="secondary">{cert.date}</Badge></CardDescription>
+                                        </div>
                                     </div>
-                                </div>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-muted-foreground">{cert.description}</p>
-                            </CardContent>
-                        </Card>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">{cert.description}</p>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
                     ))}
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 const experiences = [
     {
@@ -19,6 +20,18 @@ const experiences = [
     }
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
 export function ExperienceSection() {
     return (
         <section id="experience" className="w-full py-20 md:py-32">
@@ -36,25 +49,30 @@ export function ExperienceSection() {
                     {experiences.map((exp, index) => (
                         <div key={index} className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                             <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                                <Card className="transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
-                                    <CardHeader>
-                                        <div className={`flex items-center gap-4 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
-                                            <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
-                                            <div className={`${index % 2 === 0 ? '' : 'text-right'}`}>
-                                                <CardTitle>{exp.title}</CardTitle>
-                                                <p className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></p>
+                                <motion.div
+                                    variants={cardVariants}
+                                    className="w-full"
+                                >
+                                    <Card className="transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                                        <CardHeader>
+                                            <div className={`flex items-center gap-4 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
+                                                <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
+                                                <div className={`${index % 2 === 0 ? '' : 'text-right'}`}>
+                                                    <CardTitle>{exp.title}</CardTitle>
+                                                    <p className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-muted-foreground text-left">{exp.description}</p>
-                                        <div className={`mt-4 flex flex-wrap gap-2 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                                            {exp.skills.map((skill) => (
-                                                <Badge key={skill} variant="outline">{skill}</Badge>
-                                            ))}
-                                        </div>
-                                    </CardContent>
-                                </Card>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-muted-foreground text-left">{exp.description}</p>
+                                            <div className={`mt-4 flex flex-wrap gap-2 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                                                {exp.skills.map((skill) => (
+                                                    <Badge key={skill} variant="outline">{skill}</Badge>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </motion.div>
                             </div>
                         </div>
                     ))}

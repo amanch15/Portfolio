@@ -8,7 +8,7 @@ import { AiAssistantButton } from '@/components/ai-assistant-button';
 
 export default function Home() {
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-slate-50 dark:bg-slate-950">
+    <div className="flex min-h-[100dvh] flex-col bg-background dark:bg-background">
       <Header />
       <main className="flex-1">
         <HeroSection />

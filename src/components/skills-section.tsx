@@ -1,11 +1,10 @@
 import type { ReactNode } from 'react';
 import { Code, Database, Wind, Cog } from 'lucide-react';
-import { Progress } from '@/components/ui/progress';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 interface Skill {
   name: string;
-  level: number;
 }
 
 interface SkillCategory {
@@ -19,53 +18,43 @@ const skillData: SkillCategory[] = [
     title: 'Languages',
     icon: <Code className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'JavaScript', level: 90 },
-      { name: 'TypeScript', level: 85 },
-      { name: 'Python', level: 80 },
-      { name: 'HTML & CSS', level: 95 },
+      { name: 'JavaScript' },
+      { name: 'TypeScript' },
+      { name: 'Python' },
+      { name: 'HTML & CSS' },
     ],
   },
   {
     title: 'Frameworks & Libraries',
     icon: <Wind className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'React.js', level: 90 },
-      { name: 'Next.js', level: 85 },
-      { name: 'Node.js & Express', level: 80 },
-      { name: 'Tailwind CSS', level: 95 },
+      { name: 'React.js' },
+      { name: 'Next.js' },
+      { name: 'Node.js & Express' },
+      { name: 'Tailwind CSS' },
     ],
   },
   {
     title: 'Databases & ORMs',
     icon: <Database className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'MongoDB', level: 80 },
-      { name: 'PostgreSQL', level: 75 },
-      { name: 'Firebase', level: 85 },
-      { name: 'Prisma', level: 70 },
+      { name: 'MongoDB' },
+      { name: 'PostgreSQL' },
+      { name: 'Firebase' },
+      { name: 'Prisma' },
     ],
   },
   {
     title: 'Tools & Platforms',
     icon: <Cog className="h-8 w-8 text-primary" />,
     skills: [
-      { name: 'Git & GitHub', level: 95 },
-      { name: 'Docker', level: 70 },
-      { name: 'Vercel', level: 90 },
-      { name: 'Figma', level: 75 },
+      { name: 'Git & GitHub' },
+      { name: 'Docker' },
+      { name: 'Vercel' },
+      { name: 'Figma' },
     ],
   },
 ];
-
-const SkillBar = ({ name, level }: Skill) => (
-  <div className="space-y-2">
-    <div className="flex justify-between">
-      <h3 className="font-medium">{name}</h3>
-      <span className="text-sm text-muted-foreground">{level}%</span>
-    </div>
-    <Progress value={level} aria-label={`${name} proficiency ${level} percent`} />
-  </div>
-);
 
 export function SkillsSection() {
   return (
@@ -86,9 +75,11 @@ export function SkillsSection() {
                 {category.icon}
                 <CardTitle>{category.title}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
-                  <SkillBar key={skill.name} {...skill} />
+                  <Badge key={skill.name} variant="secondary" className="text-base">
+                    {skill.name}
+                  </Badge>
                 ))}
               </CardContent>
             </Card>

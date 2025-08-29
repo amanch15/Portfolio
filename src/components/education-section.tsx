@@ -12,16 +12,16 @@ const educationHistory = [
         location: "Kolkata, India",
     },
     {
-        degree: "Higher Secondary Education",
-        institution: "St. Stephen's School",
-        period: "2020 - 2022",
+        degree: "Class 12 (CBSE)",
+        institution: "Kendriya Vidyalaya Cossipore",
+        period: "2020 - 2021",
         location: "Kolkata, India",
     },
     {
-        degree: "Secondary Education",
-        institution: "St. Stephen's School",
-        period: "2010 - 2020",
-        location: "Kolkata, India",
+        degree: "Class 10 (CBSE)",
+        institution: "Kendriya Vidyalaya ONGC",
+        period: "2018 - 2019",
+        location: "Agartala, India",
     },
 ];
 

@@ -8,6 +8,7 @@ import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 import { ExperienceSection } from '@/components/experience-section';
 import { AnimatedSection } from '@/components/animated-section';
+import { AboutMeSection } from '@/components/about-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <AnimatedSection>
+          <AboutMeSection />
+        </AnimatedSection>
         <AnimatedSection>
           <SkillsSection />
         </AnimatedSection>

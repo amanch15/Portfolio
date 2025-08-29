@@ -56,7 +56,7 @@ const projects = [
     description: 'Developed a web-based virus detection tool that scans uploaded files for threats. Implemented secure file handling and backend processing using Node.js and Express. Built a responsive frontend with HTML, CSS, and JavaScript for smooth interaction. Applied basic cybersecurity concepts and best practices to ensure safe usage.',
     image: 'https://picsum.photos/600/400?random=14',
     imageHint: 'cyber security technology',
-    liveUrl: '#',
+    liveUrl: 'https://securedocscanner.vercel.app/',
     repoUrl: '#',
     tags: ['Node.js', 'Express', 'HTML', 'CSS', 'JavaScript'],
   },

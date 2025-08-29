@@ -1,74 +1,56 @@
 'use client';
 
-import type { ReactNode } from 'react';
-import { Code, Database, Wind, Cog } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { motion } from 'framer-motion';
+import {
+  IconReact,
+  IconHtml5,
+  IconCss3,
+  IconTailwind,
+  IconNextjs,
+  IconBootstrap,
+  IconExpress,
+  IconFirebase,
+  IconGithub,
+  IconGit,
+  IconHeroku,
+  IconJavascript,
+  IconJquery,
+  IconMarkdown,
+  IconMongodb,
+  IconMysql,
+  IconNpm,
+  IconNodejs,
+  IconPython,
+  IconCplusplus,
+  IconCsharp,
+  IconSql,
+  IconRestApi,
+} from '@/components/icons';
 
-interface Skill {
-  name: string;
-}
-
-interface SkillCategory {
-  title: string;
-  icon: ReactNode;
-  skills: Skill[];
-}
-
-const skillData: SkillCategory[] = [
-  {
-    title: 'Languages',
-    icon: <Code className="h-8 w-8 text-primary" />,
-    skills: [
-      { name: 'Python' },
-      { name: 'C++' },
-      { name: 'JavaScript' },
-      { name: 'C#' },
-      { name: 'SQL' },
-      { name: 'HTML' },
-      { name: 'CSS' },
-    ],
-  },
-  {
-    title: 'Frameworks & Libraries',
-    icon: <Wind className="h-8 w-8 text-primary" />,
-    skills: [
-      { name: 'React.js' },
-    ],
-  },
-  {
-    title: 'Tools & Technologies',
-    icon: <Cog className="h-8 w-8 text-primary" />,
-    skills: [
-      { name: 'Excel' },
-      { name: 'Rest API' },
-    ],
-  },
-  {
-    title: 'Soft Skills',
-    icon: <Database className="h-8 w-8 text-primary" />,
-    skills: [
-        { name: 'Discipline' },
-        { name: 'Team Work' },
-        { name: 'Solving Skills' },
-        { name: 'Punctuality' },
-    ],
-  }
+const skills = [
+  { name: 'React', icon: <IconReact className="h-12 w-12" /> },
+  { name: 'Next.js', icon: <IconNextjs className="h-12 w-12" /> },
+  { name: 'JavaScript', icon: <IconJavascript className="h-12 w-12" /> },
+  { name: 'HTML5', icon: <IconHtml5 className="h-12 w-12" /> },
+  { name: 'CSS3', icon: <IconCss3 className="h-12 w-12" /> },
+  { name: 'Tailwind CSS', icon: <IconTailwind className="h-12 w-12" /> },
+  { name: 'Node.js', icon: <IconNodejs className="h-12 w-12" /> },
+  { name: 'Express', icon: <IconExpress className="h-12 w-12" /> },
+  { name: 'Python', icon: <IconPython className="h-12 w-12" /> },
+  { name: 'C++', icon: <IconCplusplus className="h-12 w-12" /> },
+  { name: 'C#', icon: <IconCsharp className="h-12 w-12" /> },
+  { name: 'SQL', icon: <IconSql className="h-12 w-12" /> },
+  { name: 'MongoDB', icon: <IconMongodb className="h-12 w-12" /> },
+  { name: 'MySQL', icon: <IconMysql className="h-12 w-12" /> },
+  { name: 'Firebase', icon: <IconFirebase className="h-12 w-12" /> },
+  { name: 'Git', icon: <IconGit className="h-12 w-12" /> },
+  { name: 'GitHub', icon: <IconGithub className="h-12 w-12" /> },
+  { name: 'Bootstrap', icon: <IconBootstrap className="h-12 w-12" /> },
+  { name: 'Heroku', icon: <IconHeroku className="h-12 w-12" /> },
+  { name: 'jQuery', icon: <IconJquery className="h-12 w-12" /> },
+  { name: 'Markdown', icon: <IconMarkdown className="h-12 w-12" /> },
+  { name: 'npm', icon: <IconNpm className="h-12 w-12" /> },
+  { name: 'Rest API', icon: <IconRestApi className="h-12 w-12" /> },
 ];
-
-const cardVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: i * 0.2,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  }),
-};
 
 export function SkillsSection() {
   return (
@@ -76,36 +58,21 @@ export function SkillsSection() {
       <div className="container px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Technical Skills
+            I have experience with these technologies
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-            A look at the technologies and skills I work with.
+            A look at the tools and technologies I use to build things.
           </p>
         </div>
-        <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2">
-          {skillData.map((category, index) => (
-            <motion.div
-              key={category.title}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              custom={index}
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+          {skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="flex flex-col items-center justify-center gap-2 p-4 rounded-lg transition-transform transform hover:scale-110 hover:shadow-xl duration-300"
             >
-              <Card>
-                <CardHeader className="flex flex-row items-center gap-4">
-                  {category.icon}
-                  <CardTitle>{category.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <Badge key={skill.name} variant="secondary" className="text-base">
-                      {skill.name}
-                    </Badge>
-                  ))}
-                </CardContent>
-              </Card>
-            </motion.div>
+              {skill.icon}
+              <span className="text-sm font-medium text-center">{skill.name}</span>
+            </div>
           ))}
         </div>
       </div>

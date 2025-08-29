@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const experiences = [
     {
@@ -11,7 +12,8 @@ const experiences = [
         company: "The Techie Indians",
         date: "June 2025 - Aug 2025",
         description: "Gained experience in C# development within a professional team environment.",
-        skills: ["C#"]
+        skills: ["C#"],
+        image: "https://i.ibb.co/6gZ3GzQ/The-Techie-Indians.png",
     },
     {
         title: "Front-end Developer Intern",
@@ -61,7 +63,11 @@ export function ExperienceSection() {
                                     <Card className="transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
                                         <CardHeader>
                                             <div className={`flex items-center gap-4 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
-                                                <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
+                                                {exp.image ? (
+                                                    <Image src={exp.image} alt={`${exp.company} logo`} width={40} height={40} className="rounded-full" />
+                                                ) : (
+                                                    <Briefcase className="h-8 w-8 text-primary flex-shrink-0" />
+                                                )}
                                                 <div className={`${index % 2 === 0 ? '' : 'text-right'}`}>
                                                     <CardTitle>{exp.title}</CardTitle>
                                                     <div className="text-muted-foreground">{exp.company} - <Badge variant="secondary">{exp.date}</Badge></div>

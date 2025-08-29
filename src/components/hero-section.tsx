@@ -23,7 +23,6 @@ developer.introduce();`;
         <div className="relative space-y-4">
            <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse delay-500"></div>
-          <p className="text-lg text-muted-foreground">“Turning ideas into scalable software solutions”</p>
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-mono text-primary">
             Computer Science Student
           </div>

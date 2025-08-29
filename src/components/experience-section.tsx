@@ -13,7 +13,6 @@ const experiences = [
         date: "June 2025 - Aug 2025",
         description: "Gained experience in C# development within a professional team environment.",
         skills: ["C#"],
-        image: "https://i.ibb.co/6gZ3GzQ/The-Techie-Indians.png",
     },
     {
         title: "Front-end Developer Intern",

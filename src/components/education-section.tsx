@@ -10,6 +10,7 @@ const educationHistory = [
         institution: "Amity University, Kolkata",
         period: "2022 - Present",
         location: "Kolkata, India",
+        courses: "Relevant Courses: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, Cloud Computing, Software Engineering, Machine Learning.",
     },
     {
         degree: "Class 12 (CBSE)",
@@ -75,6 +76,9 @@ export function EducationSection() {
                                         <CardContent className={`text-muted-foreground ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                                             <p>{edu.period}</p>
                                             <p>{edu.location}</p>
+                                            {edu.courses && (
+                                                <p className="mt-2 text-sm">{edu.courses}</p>
+                                            )}
                                         </CardContent>
                                     </Card>
                                 </motion.div>

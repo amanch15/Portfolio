@@ -1,81 +1,29 @@
 'use client';
 
-import {
-  IconReact,
-  IconHtml5,
-  IconCss3,
-  IconTailwind,
-  IconNextjs,
-  IconBootstrap,
-  IconExpress,
-  IconFirebase,
-  IconGithub,
-  IconGit,
-  IconHeroku,
-  IconJavascript,
-  IconJquery,
-  IconMarkdown,
-  IconMongodb,
-  IconMysql,
-  IconNpm,
-  IconNodejs,
-  IconPython,
-  IconCplusplus,
-  IconCsharp,
-  IconSql,
-  IconRestApi,
-} from '@/components/icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
+import { Badge } from '@/components/ui/badge';
 
 const skillCategories = [
   {
     title: 'Languages',
-    skills: [
-      { name: 'Python', icon: <IconPython className="h-8 w-8" /> },
-      { name: 'JavaScript', icon: <IconJavascript className="h-8 w-8" /> },
-      { name: 'C++', icon: <IconCplusplus className="h-8 w-8" /> },
-      { name: 'C#', icon: <IconCsharp className="h-8 w-8" /> },
-      { name: 'SQL', icon: <IconSql className="h-8 w-8" /> },
-      { name: 'HTML5', icon: <IconHtml5 className="h-8 w-8" /> },
-      { name: 'CSS3', icon: <IconCss3 className="h-8 w-8" /> },
-    ],
+    skills: ['Python', 'JavaScript', 'C++', 'C#', 'SQL', 'HTML5', 'CSS3'],
   },
   {
     title: 'Frontend',
-    skills: [
-      { name: 'React', icon: <IconReact className="h-8 w-8" /> },
-      { name: 'Next.js', icon: <IconNextjs className="h-8 w-8" /> },
-      { name: 'Tailwind CSS', icon: <IconTailwind className="h-8 w-8" /> },
-      { name: 'Bootstrap', icon: <IconBootstrap className="h-8 w-8" /> },
-      { name: 'jQuery', icon: <IconJquery className="h-8 w-8" /> },
-    ],
+    skills: ['React', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'jQuery'],
   },
   {
     title: 'Backend',
-    skills: [
-      { name: 'Node.js', icon: <IconNodejs className="h-8 w-8" /> },
-      { name: 'Express', icon: <IconExpress className="h-8 w-8" /> },
-      { name: 'Firebase', icon: <IconFirebase className="h-8 w-8" /> },
-      { name: 'Rest API', icon: <IconRestApi className="h-8 w-8" /> },
-    ],
+    skills: ['Node.js', 'Express', 'Firebase', 'Rest API'],
   },
   {
     title: 'Databases',
-    skills: [
-      { name: 'MongoDB', icon: <IconMongodb className="h-8 w-8" /> },
-      { name: 'MySQL', icon: <IconMysql className="h-8 w-8" /> },
-    ],
+    skills: ['MongoDB', 'MySQL'],
   },
   {
     title: 'Tools & Technologies',
-    skills: [
-      { name: 'Git', icon: <IconGit className="h-8 w-8" /> },
-      { name: 'GitHub', icon: <IconGithub className="h-8 w-8" /> },
-      { name: 'npm', icon: <IconNpm className="h-8 w-8" /> },
-      { name: 'Heroku', icon: <IconHeroku className="h-8 w-8" /> },
-      { name: 'Markdown', icon: <IconMarkdown className="h-8 w-8" /> },
-    ],
+    skills: ['Git', 'GitHub', 'npm', 'Heroku', 'Markdown'],
   },
 ];
 
@@ -120,12 +68,11 @@ export function SkillsSection() {
                   <CardTitle>{category.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
-                      <div key={skill.name} className="flex items-center gap-2">
-                        {skill.icon}
-                        <span className="text-sm font-medium">{skill.name}</span>
-                      </div>
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
                     ))}
                   </div>
                 </CardContent>

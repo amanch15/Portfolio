@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Code2 } from 'lucide-react';
+import { Code2, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Header() {
@@ -32,7 +32,13 @@ export function Header() {
             Contact
           </Link>
         </nav>
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end gap-2">
+           <Button asChild variant="outline">
+              <a href="https://shorturl.at/xBCMS" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </a>
+            </Button>
           <Button asChild className="shadow-[0_0_20px_theme(colors.primary)] hover:shadow-[0_0_30px_theme(colors.primary)] transition-shadow">
             <a href="#contact">Get in Touch</a>
           </Button>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin } from 'lucide-react';
+import { Download, Github, Linkedin } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -22,6 +22,12 @@ export function HeroSection() {
           <div className="flex flex-col gap-3 min-[400px]:flex-row pt-4">
             <Button asChild size="lg" className="shadow-[0_0_20px_theme(colors.primary)] hover:shadow-[0_0_30px_theme(colors.primary)] transition-shadow">
               <a href="#contact">Contact Me</a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a href="https://shorturl.at/xBCMS" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4" />
+                My Resume
+              </a>
             </Button>
             <div className="flex items-center gap-2">
               <Button variant="outline" size="icon" asChild>

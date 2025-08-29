@@ -16,6 +16,15 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Personal Portfolio',
+    description: 'Designed and developed this personal portfolio website to showcase my skills, projects, and experience. Built with Next.js, React, Tailwind CSS, and ShadCN UI for a modern, responsive, and visually appealing presentation.',
+    image: 'https://picsum.photos/600/400?random=4',
+    imageHint: 'portfolio website design',
+    liveUrl: '#',
+    repoUrl: 'https://github.com/amanch15/portfolio',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'ShadCN UI'],
+  },
+  {
     title: 'Amazon Clone',
     description: 'Designed and developed a responsive Amazon clone using HTML and CSS, accurately replicating the homepage layout, navigation bar, product sections, and footer. Focused on clean code, responsive design principles, and pixel-perfect UI/UX.',
     image: 'https://picsum.photos/600/400?random=1',

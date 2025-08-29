@@ -1,8 +1,22 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Download, Github, Linkedin } from 'lucide-react';
+import { Card, CardContent } from './ui/card';
 
 export function HeroSection() {
+  const codeString = `const developer = {
+  name: "Aman Choudhary",
+  role: "CS Student | Full-Stack Developer | AI Enthusiast",
+  interests: ["Web Development", "AI", "Problem Solving", "Cooking"],
+
+  introduce() {
+    console.log(\`Hi, I’m \${this.name}, a \${this.role}.\`);
+    console.log("I enjoy:", this.interests.join(", "));
+  }
+};
+
+developer.introduce();`;
+
   return (
     <section id="introduction" className="w-full py-20 md:py-32">
       <div className="container grid items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
@@ -16,9 +30,13 @@ export function HeroSection() {
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
             Aman Choudhary
           </h1>
-          <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            I am Aman Choudhary, a final year Computer Science student with strong interests in Software Development, Artificial Intelligence, and Full-Stack Web Development. I have worked on multiple projects ranging from web applications to AI-based tools, and I am continuously improving my problem-solving and coding skills. My goal is to build scalable, user-friendly, and innovative software solutions while growing as a professional in the tech industry.
-          </p>
+          <Card className="w-full max-w-3xl bg-secondary shadow-lg">
+            <CardContent className="p-6">
+              <pre className="text-left text-sm md:text-base font-code text-muted-foreground overflow-x-auto">
+                <code className="text-white">{codeString}</code>
+              </pre>
+            </CardContent>
+          </Card>
           <div className="flex flex-col gap-3 min-[400px]:flex-row pt-4">
             <Button asChild size="lg" className="shadow-[0_0_20px_theme(colors.primary)] hover:shadow-[0_0_30px_theme(colors.primary)] transition-shadow">
               <a href="#contact">Contact Me</a>

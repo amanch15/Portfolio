@@ -1,19 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
-
 export function AboutMeSection() {
-  const codeString = `const developer = {
-  name: "Aman Choudhary",
-  role: "CS Student | Full-Stack Developer | AI Enthusiast",
-  interests: ["Web Development", "AI", "Problem Solving", "Cooking"],
-
-  introduce() {
-    console.log(\`Hi, I’m \${this.name}, a \${this.role}.\`);
-    console.log("I enjoy:", this.interests.join(", "));
-  }
-};
-
-developer.introduce();`;
-
   return (
     <section id="about" className="w-full py-20 md:py-32">
       <div className="container px-4 md:px-6">
@@ -23,13 +8,9 @@ developer.introduce();`;
           </h2>
         </div>
         <div className="mt-12 flex justify-center">
-          <Card className="w-full max-w-3xl bg-secondary shadow-lg">
-            <CardContent className="p-6">
-              <pre className="text-left text-sm md:text-base font-code text-muted-foreground overflow-x-auto">
-                <code className="text-white">{codeString}</code>
-              </pre>
-            </CardContent>
-          </Card>
+          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed text-center">
+            I am Aman Choudhary, a final year Computer Science student with strong interests in Software Development, Artificial Intelligence, and Full-Stack Web Development. I have worked on multiple projects ranging from web applications to AI-based tools, and I am continuously improving my problem-solving and coding skills. My goal is to build scalable, user-friendly, and innovative software solutions while growing as a professional in the tech industry.
+          </p>
         </div>
       </div>
     </section>

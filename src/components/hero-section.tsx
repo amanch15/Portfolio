@@ -17,7 +17,7 @@ export function HeroSection() {
             Aman Choudhary
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            A highly motivated Computer Science student with a strong foundation in software development, passionate about building scalable applications and solving real-world problems.
+            I am Aman Choudhary, a final year Computer Science student with strong interests in Software Development, Artificial Intelligence, and Full-Stack Web Development. I have worked on multiple projects ranging from web applications to AI-based tools, and I am continuously improving my problem-solving and coding skills. My goal is to build scalable, user-friendly, and innovative software solutions while growing as a professional in the tech industry.
           </p>
           <div className="flex flex-col gap-3 min-[400px]:flex-row pt-4">
             <Button asChild size="lg" className="shadow-[0_0_20px_theme(colors.primary)] hover:shadow-[0_0_30px_theme(colors.primary)] transition-shadow">
@@ -41,7 +41,7 @@ export function HeroSection() {
            <div className="absolute inset-0 w-full h-full bg-primary/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
           <Image
             src="https://picsum.photos/400/400"
-            data-ai-hint="developer setup"
+            data-ai-hint="developer coding"
             alt="Aman Choudhary"
             width={400}
             height={400}

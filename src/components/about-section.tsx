@@ -7,7 +7,7 @@ export function AboutMeSection() {
             About Me
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            A highly motivated Computer Science student with a strong foundation in software development. Passionate about building scalable applications and solving real-world problems using cutting-edge technologies. Seeking an opportunity to contribute my problem-solving skills, full-stack development expertise, and knowledge of AI to an innovative team while continuously learning and growing in a dynamic environment.
+            I am Aman Choudhary, a final year Computer Science student with strong interests in Software Development, Artificial Intelligence, and Full-Stack Web Development. I have worked on multiple projects ranging from web applications to AI-based tools, and I am continuously improving my problem-solving and coding skills. My goal is to build scalable, user-friendly, and innovative software solutions while growing as a professional in the tech industry.
           </p>
         </div>
       </div>

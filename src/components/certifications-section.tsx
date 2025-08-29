@@ -18,7 +18,31 @@ const certifications = [
         issuer: "Coursera",
         date: "2024",
         url: "https://coursera.org/share/fa5ab42eef894b3ab38920948736f896",
-    }
+    },
+    {
+        title: "Angular",
+        issuer: "Infosys",
+        date: "2025",
+        url: "#",
+    },
+    {
+        title: "Angular Web Development",
+        issuer: "Infosys",
+        date: "2025",
+        url: "#",
+    },
+    {
+        title: "Oracle Cloud Infrastructure",
+        issuer: "Oracle",
+        date: "2025",
+        url: "#",
+    },
+    {
+        title: "HTML",
+        issuer: "Web Development Course",
+        date: "2025",
+        url: "#",
+    },
 ];
 
 const cardVariants = {
@@ -46,7 +70,7 @@ export function CertificationsSection() {
                         My professional certifications and achievements.
                     </p>
                 </div>
-                <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div className="grid gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {certifications.map((cert, index) => (
                         <motion.div
                             key={index}

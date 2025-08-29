@@ -25,32 +25,72 @@ import {
   IconSql,
   IconRestApi,
 } from '@/components/icons';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from 'framer-motion';
 
-const skills = [
-  { name: 'React', icon: <IconReact className="h-12 w-12" /> },
-  { name: 'Next.js', icon: <IconNextjs className="h-12 w-12" /> },
-  { name: 'JavaScript', icon: <IconJavascript className="h-12 w-12" /> },
-  { name: 'HTML5', icon: <IconHtml5 className="h-12 w-12" /> },
-  { name: 'CSS3', icon: <IconCss3 className="h-12 w-12" /> },
-  { name: 'Tailwind CSS', icon: <IconTailwind className="h-12 w-12" /> },
-  { name: 'Node.js', icon: <IconNodejs className="h-12 w-12" /> },
-  { name: 'Express', icon: <IconExpress className="h-12 w-12" /> },
-  { name: 'Python', icon: <IconPython className="h-12 w-12" /> },
-  { name: 'C++', icon: <IconCplusplus className="h-12 w-12" /> },
-  { name: 'C#', icon: <IconCsharp className="h-12 w-12" /> },
-  { name: 'SQL', icon: <IconSql className="h-12 w-12" /> },
-  { name: 'MongoDB', icon: <IconMongodb className="h-12 w-12" /> },
-  { name: 'MySQL', icon: <IconMysql className="h-12 w-12" /> },
-  { name: 'Firebase', icon: <IconFirebase className="h-12 w-12" /> },
-  { name: 'Git', icon: <IconGit className="h-12 w-12" /> },
-  { name: 'GitHub', icon: <IconGithub className="h-12 w-12" /> },
-  { name: 'Bootstrap', icon: <IconBootstrap className="h-12 w-12" /> },
-  { name: 'Heroku', icon: <IconHeroku className="h-12 w-12" /> },
-  { name: 'jQuery', icon: <IconJquery className="h-12 w-12" /> },
-  { name: 'Markdown', icon: <IconMarkdown className="h-12 w-12" /> },
-  { name: 'npm', icon: <IconNpm className="h-12 w-12" /> },
-  { name: 'Rest API', icon: <IconRestApi className="h-12 w-12" /> },
+const skillCategories = [
+  {
+    title: 'Languages',
+    skills: [
+      { name: 'Python', icon: <IconPython className="h-8 w-8" /> },
+      { name: 'JavaScript', icon: <IconJavascript className="h-8 w-8" /> },
+      { name: 'C++', icon: <IconCplusplus className="h-8 w-8" /> },
+      { name: 'C#', icon: <IconCsharp className="h-8 w-8" /> },
+      { name: 'SQL', icon: <IconSql className="h-8 w-8" /> },
+      { name: 'HTML5', icon: <IconHtml5 className="h-8 w-8" /> },
+      { name: 'CSS3', icon: <IconCss3 className="h-8 w-8" /> },
+    ],
+  },
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'React', icon: <IconReact className="h-8 w-8" /> },
+      { name: 'Next.js', icon: <IconNextjs className="h-8 w-8" /> },
+      { name: 'Tailwind CSS', icon: <IconTailwind className="h-8 w-8" /> },
+      { name: 'Bootstrap', icon: <IconBootstrap className="h-8 w-8" /> },
+      { name: 'jQuery', icon: <IconJquery className="h-8 w-8" /> },
+    ],
+  },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'Node.js', icon: <IconNodejs className="h-8 w-8" /> },
+      { name: 'Express', icon: <IconExpress className="h-8 w-8" /> },
+      { name: 'Firebase', icon: <IconFirebase className="h-8 w-8" /> },
+      { name: 'Rest API', icon: <IconRestApi className="h-8 w-8" /> },
+    ],
+  },
+  {
+    title: 'Databases',
+    skills: [
+      { name: 'MongoDB', icon: <IconMongodb className="h-8 w-8" /> },
+      { name: 'MySQL', icon: <IconMysql className="h-8 w-8" /> },
+    ],
+  },
+  {
+    title: 'Tools & Technologies',
+    skills: [
+      { name: 'Git', icon: <IconGit className="h-8 w-8" /> },
+      { name: 'GitHub', icon: <IconGithub className="h-8 w-8" /> },
+      { name: 'npm', icon: <IconNpm className="h-8 w-8" /> },
+      { name: 'Heroku', icon: <IconHeroku className="h-8 w-8" /> },
+      { name: 'Markdown', icon: <IconMarkdown className="h-8 w-8" /> },
+    ],
+  },
 ];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  }),
+};
 
 export function SkillsSection() {
   return (
@@ -58,21 +98,39 @@ export function SkillsSection() {
       <div className="container px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            I have experience with these technologies
+            My Technical Skills
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
             A look at the tools and technologies I use to build things.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
-          {skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="flex flex-col items-center justify-center gap-2 p-4 rounded-lg transition-transform transform hover:scale-110 hover:shadow-xl duration-300"
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {skillCategories.map((category, index) => (
+             <motion.div
+              key={category.title}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              custom={index}
+              className="flex"
             >
-              {skill.icon}
-              <span className="text-sm font-medium text-center">{skill.name}</span>
-            </div>
+              <Card className="flex flex-col w-full transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                <CardHeader>
+                  <CardTitle>{category.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-4">
+                    {category.skills.map((skill) => (
+                      <div key={skill.name} className="flex items-center gap-2">
+                        {skill.icon}
+                        <span className="text-sm font-medium">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>

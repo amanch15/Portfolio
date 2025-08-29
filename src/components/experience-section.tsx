@@ -21,7 +21,10 @@ Improved overall user experience by ensuring scalability, maintainability, and c
         title: "Front-end Developer Intern",
         company: "Botfixed Automation",
         date: "July 2025 - Aug 2025",
-        description: "Enhanced user interfaces using front-end development skills.",
+        description: `Designed and developed the front-end interface for a chatbot application to enhance user interaction and automation.
+Implemented responsive UI components with a clean and user-friendly design.
+Integrated the chatbot with back-end APIs to enable real-time communication.
+Collaborated with the team to ensure scalability, cross-browser compatibility, and performance optimization. `,
         skills: ["HTML", "CSS", "JavaScript"]
     }
 ];

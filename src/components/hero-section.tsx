@@ -64,7 +64,7 @@ developer.introduce();`;
         <div className="flex justify-center relative">
            <div className="absolute inset-0 w-full h-full bg-primary/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
           <Image
-            src="https://picsum.photos/400/400"
+            src="https://picsum.photos/400/400?random=4"
             data-ai-hint="developer coding"
             alt="Aman Choudhary"
             width={400}

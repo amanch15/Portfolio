@@ -13,9 +13,6 @@ export function Header() {
           </span>
         </Link>
         <nav className="flex flex-1 items-center space-x-4 lg:space-x-6">
-           <Link href="#about" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            About
-          </Link>
           <Link href="#skills" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Skills
           </Link>

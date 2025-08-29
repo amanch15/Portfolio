@@ -63,8 +63,8 @@ developer.introduce();`;
         <div className="flex justify-center relative">
            <div className="absolute inset-0 w-full h-full bg-primary/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
           <Image
-            src="https://picsum.photos/400/400?random=5"
-            data-ai-hint="developer coding"
+            src="https://picsum.photos/seed/aman-choudhary/400/400"
+            data-ai-hint="professional portrait"
             alt="Aman Choudhary"
             width={400}
             height={400}

@@ -39,7 +39,7 @@ const projects = [
     image: 'https://picsum.photos/600/400?random=12',
     imageHint: 'online shopping interface',
     liveUrl: '#',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/amanch15/Amazon_clone',
     tags: ['HTML', 'CSS'],
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     image: 'https://picsum.photos/600/400?random=13',
     imageHint: 'game interface fun',
     liveUrl: '#',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/amanch15/Rock-Paper-Scissor-Game',
     tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {

@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Personal Portfolio',
     description: 'Designed and developed this personal portfolio website to showcase my skills, projects, and experience. Built with Next.js, React, Tailwind CSS, and ShadCN UI for a modern, responsive, and visually appealing presentation.',
-    image: 'https://picsum.photos/600/400?random=4',
+    image: 'https://picsum.photos/600/400?random=10',
     imageHint: 'portfolio website design',
     liveUrl: '#',
     repoUrl: 'https://github.com/amanch15/portfolio',
@@ -27,8 +27,8 @@ const projects = [
   {
     title: 'Currency Converter',
     description: 'A web application that allows users to convert between different currencies using real-time exchange rates. Built with a focus on usability and a clean interface.',
-    image: 'https://picsum.photos/600/400?random=5',
-    imageHint: 'currency exchange',
+    image: 'https://picsum.photos/600/400?random=11',
+    imageHint: 'currency exchange money',
     liveUrl: '#',
     repoUrl: 'https://github.com/amanch15/Currency-Converter',
     tags: ['JavaScript', 'HTML', 'CSS', 'API'],
@@ -36,7 +36,7 @@ const projects = [
   {
     title: 'Amazon Clone',
     description: 'Designed and developed a responsive Amazon clone using HTML and CSS, accurately replicating the homepage layout, navigation bar, product sections, and footer. Focused on clean code, responsive design principles, and pixel-perfect UI/UX.',
-    image: 'https://picsum.photos/600/400?random=1',
+    image: 'https://picsum.photos/600/400?random=12',
     imageHint: 'online shopping interface',
     liveUrl: '#',
     repoUrl: '#',
@@ -45,8 +45,8 @@ const projects = [
   {
     title: 'Rock Paper Scissors Game',
     description: 'Built an interactive Rock Paper Scissors game using HTML, CSS, and JavaScript, implementing dynamic gameplay logic, user interface design, and responsive animations. Focused on enhancing DOM manipulation skills and providing a smooth user experience.',
-    image: 'https://picsum.photos/600/400?random=2',
-    imageHint: 'game interface',
+    image: 'https://picsum.photos/600/400?random=13',
+    imageHint: 'game interface fun',
     liveUrl: '#',
     repoUrl: '#',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -54,8 +54,8 @@ const projects = [
   {
     title: 'Virus Detection Tool',
     description: 'Developed a web-based virus detection tool that scans uploaded files for threats. Implemented secure file handling and backend processing using Node.js and Express. Built a responsive frontend with HTML, CSS, and JavaScript for smooth interaction. Applied basic cybersecurity concepts and best practices to ensure safe usage.',
-    image: 'https://picsum.photos/600/400?random=3',
-    imageHint: 'cyber security',
+    image: 'https://picsum.photos/600/400?random=14',
+    imageHint: 'cyber security technology',
     liveUrl: '#',
     repoUrl: '#',
     tags: ['Node.js', 'Express', 'HTML', 'CSS', 'JavaScript'],

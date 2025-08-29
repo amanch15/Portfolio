@@ -7,15 +7,8 @@ export function HeroSection() {
   const codeString = `const developer = {
   name: "Aman Choudhary",
   role: "CS Student | Full-Stack Developer | AI Enthusiast",
-  interests: ["Web Development", "AI", "Problem Solving", "Cooking"],
-
-  introduce() {
-    console.log(\`Hi, I’m \${this.name}, a \${this.role}.\`);
-    console.log("I enjoy:", this.interests.join(", "));
-  }
-};
-
-developer.introduce();`;
+  interests: ["Web Development", "AI", "Problem Solving", "Cooking"]
+};`;
 
   return (
     <section id="introduction" className="w-full py-20 md:py-32">

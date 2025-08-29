@@ -1,59 +1,49 @@
-🌐 Personal Portfolio
+# 🌐 Personal Portfolio
 
 This is the source code for my personal portfolio website, built with a modern, high-performance tech stack.
 It highlights my skills, projects, and experiences while demonstrating my ability to build professional web applications.
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
-Framework: Next.js
- – React framework with SSR & SSG for optimal performance
+- **Framework**: Next.js (React framework with SSR & SSG)
+- **Language**: TypeScript
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **AI Integration**: Genkit
 
-Language: TypeScript
- – Static typing for better maintainability
+## 📂 Features
 
-UI Components: shadcn/ui
- – Customizable UI library built on Radix UI
+- Responsive and modern design
+- Smooth animations and transitions
+- Interactive UI components
+- Project showcase with details
+- AI-powered features using Genkit
+- Optimized for performance and SEO
 
-Styling: Tailwind CSS
- – Utility-first CSS framework for rapid UI development
+## 🛠️ Installation & Setup
 
-Animations: Framer Motion
- – Smooth and interactive animations
+First, you'll need to have Node.js and Git installed on your computer.
 
-AI Integration: Genkit
- – Google’s open-source framework for generative AI features
+1.  **Clone the repository:**
+    ```bash
+    # Replace <your-github-username> with your actual GitHub username
+    git clone https://github.com/<your-github-username>/portfolio.git
+    ```
 
-📂 Features
+2.  **Navigate to the project directory:**
+    ```bash
+    cd portfolio
+    ```
 
-Responsive and modern design
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Smooth animations and transitions
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-Interactive UI components
-
-Project showcase with details
-
-AI-powered features using Genkit
-
-Optimized for performance and SEO
-
-🛠️ Installation & Setup
-# Clone the repository
-git clone https://github.com/your-username/portfolio.git
-
-# Navigate to the project directory
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-
-Then open http://localhost:3000
- to view it in your browser.
-
-🚀 Deployment
-
-The portfolio is deployed at:
+Then open `http://localhost:3000` to view it in your browser.

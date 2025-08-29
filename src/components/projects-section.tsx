@@ -25,6 +25,15 @@ const projects = [
     tags: ['Next.js', 'React', 'Tailwind CSS', 'ShadCN UI'],
   },
   {
+    title: 'Currency Converter',
+    description: 'A web application that allows users to convert between different currencies using real-time exchange rates. Built with a focus on usability and a clean interface.',
+    image: 'https://picsum.photos/600/400?random=5',
+    imageHint: 'currency exchange',
+    liveUrl: '#',
+    repoUrl: 'https://github.com/amanch15/Currency-Converter',
+    tags: ['JavaScript', 'HTML', 'CSS', 'API'],
+  },
+  {
     title: 'Amazon Clone',
     description: 'Designed and developed a responsive Amazon clone using HTML and CSS, accurately replicating the homepage layout, navigation bar, product sections, and footer. Focused on clean code, responsive design principles, and pixel-perfect UI/UX.',
     image: 'https://picsum.photos/600/400?random=1',

@@ -17,6 +17,7 @@ const educationHistory = [
         institution: "Kendriya Vidyalaya Cossipore",
         period: "2020 - 2021",
         location: "Kolkata, India",
+        courses: "Relevant Subjects: Physics, Chemistry, Biology, Mathematics (PCBM)",
     },
     {
         degree: "Class 10 (CBSE)",

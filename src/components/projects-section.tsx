@@ -16,6 +16,15 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Agentic AI Tutor',
+    description: "Developed an AI-powered tutoring agent that provides personalized learning experiences. This agent can answer questions, explain concepts, and adapt to the user's learning pace, leveraging generative AI to create a dynamic and interactive educational tool.",
+    image: 'https://picsum.photos/600/400?random=15',
+    imageHint: 'AI education',
+    liveUrl: '#',
+    repoUrl: '#',
+    tags: ['Genkit', 'AI', 'Next.js', 'React'],
+  },
+  {
     title: 'Personal Portfolio',
     description: 'Designed and developed this personal portfolio website to showcase my skills, projects, and experience. Built with Next.js, React, Tailwind CSS, and ShadCN UI for a modern, responsive, and visually appealing presentation.',
     image: 'https://picsum.photos/600/400?random=10',

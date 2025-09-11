@@ -41,7 +41,7 @@ developer.introduce();`;
               <a href="#contact">Contact Me</a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <a href="https://shorturl.at/xBCMS" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1SSEPCGG3O8PUrDIhUFgyLZR7nfgYjphH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
                 My Resume
               </a>
@@ -63,7 +63,7 @@ developer.introduce();`;
         <div className="flex justify-center relative">
            <div className="absolute inset-0 w-full h-full bg-primary/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
           <Image
-            src="https://picsum.photos/seed/aman-choudhary/400/400"
+            src="https://picsum.photos/seed/professional-portrait/400/400"
             data-ai-hint="professional portrait"
             alt="Aman Choudhary"
             width={400}

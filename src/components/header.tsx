@@ -44,7 +44,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center justify-end gap-2 md:flex">
           <Button asChild variant="outline">
-            <a href="https://shorturl.at/xBCMS" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1SSEPCGG3O8PUrDIhUFgyLZR7nfgYjphH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" />
               Resume
             </a>
@@ -75,7 +75,7 @@ export function Header() {
                 ))}
                 <div className="flex flex-col gap-4 mt-4">
                    <Button asChild variant="outline">
-                      <a href="https://shorturl.at/xBCMS" target="_blank" rel="noopener noreferrer">
+                      <a href="https://drive.google.com/file/d/1SSEPCGG3O8PUrDIhUFgyLZR7nfgYjphH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                         <Download className="mr-2 h-4 w-4" />
                         Resume
                       </a>

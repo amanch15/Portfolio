@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const experiences = [
     {
-        title: "C# Developer Intern",
+        title: "Asp.net Core Developer Intern",
         company: "The Techie Indians",
         date: "June 2025 - Aug 2025",
         description: `Developed and contributed to a Learning Management System (LMS) aimed at enhancing online education and student progress tracking.
 Designed and implemented student and admin dashboards with features like subject-wise progress, attendance monitoring, and performance insights.
 Collaborated with the team to integrate secure authentication, responsive UI, and efficient database management.
 Improved overall user experience by ensuring scalability, maintainability, and clean code practices.`,
-        skills: ["C#", ".NET"],
+        skills: ["ASP.NET Core", "C#", ".NET"],
     },
     {
         title: "Front-end Developer Intern",

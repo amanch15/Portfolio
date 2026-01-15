@@ -3,6 +3,10 @@
 This is the source code for my personal portfolio website, built with a modern, high-performance tech stack.
 It highlights my skills, projects, and experiences while demonstrating my ability to build professional web applications.
 
+## Live Demo
+
+amanchoudhary.vercel.app
+
 ## 🚀 Tech Stack
 
 - **Framework**: Next.js (React framework with SSR & SSG)
@@ -27,8 +31,8 @@ First, you'll need to have Node.js and Git installed on your computer.
 
 1.  **Clone the repository:**
     ```bash
-    # Replace <your-github-username> with your actual GitHub username
-    git clone https://github.com/<your-github-username>/portfolio.git
+    git clone [https://github.com/amanch15/Portfolio]
+    cd portfolio
     ```
 
 2.  **Navigate to the project directory:**
@@ -47,3 +51,5 @@ First, you'll need to have Node.js and Git installed on your computer.
     ```
 
 Then open `http://localhost:3000` to view it in your browser.
+
+
